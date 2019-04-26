@@ -77,10 +77,12 @@ PYTHON_INCLUDE := $(CONDA_PREFIX)/include \
 		$(CONDA_PREFIX)/include/python3.7m \
 		$(CONDA_PREFIX)/lib/python3.7/site-packages/numpy/core/include \
 
-# Uncomment to use Python 3 (default is Python 2)
-# PYTHON_LIBRARIES := boost_python3 python3.5m
-# PYTHON_INCLUDE := /usr/include/python3.5m \
-#                 /usr/lib/python3.5/dist-packages/numpy/core/include
+## Uncomment to use Python 2
+# PYTHON_LIBRARIES := boost_python27 python2.7
+# PYTHON_LIB := $(CONDA_PREFIX)/lib
+# PYTHON_INCLUDE := $(CONDA_PREFIX)/include \
+# 		$(CONDA_PREFIX)/include/python2.7 \
+# $(CONDA_PREFIX)/lib/python2.7/site-packages/numpy/core/include \
 
 # We need to be able to find libpythonX.X.so or .dylib.
 # PYTHON_LIB := /usr/lib
