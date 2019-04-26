@@ -70,7 +70,7 @@ BLAS_LIB := $(CONDA_PREFIX_1)/pkgs/openblas-0.3.5-h9ac9557_1001/lib
 # 		/usr/lib/python2.7/dist-packages/numpy/core/include
 # Anaconda Python distribution is quite popular. Include path:
 # Verify anaconda location, sometimes it's in root.
-ANACONDA_HOME := $(HOME)/install/anaconda3/envs/Caffe3
+# ANACONDA_HOME := $(HOME)/install/anaconda3/envs/Caffe3
 PYTHON_LIBRARIES := boost_python37 python3.7m
 PYTHON_LIB := $(CONDA_PREFIX)/lib
 PYTHON_INCLUDE := $(CONDA_PREFIX)/include \
