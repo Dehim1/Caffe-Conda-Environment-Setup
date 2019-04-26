@@ -1,0 +1,9 @@
+graphviz
+lmdb
+glog
+gflags
+protobuf
+leveldb
+openblas
+boost
+opencv<4
