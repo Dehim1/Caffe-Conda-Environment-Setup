@@ -52,8 +52,8 @@ BLAS := open
 # Custom (MKL/ATLAS/OpenBLAS) include and lib directories.
 # Leave commented to accept the defaults for your choice of BLAS
 # (which should work)!
-BLAS_INCLUDE := $(CONDA_PREFIX_1)/pkgs/openblas-0.2.20-8/include
-BLAS_LIB := $(CONDA_PREFIX_1)/pkgs/openblas-0.2.20-8/lib
+BLAS_INCLUDE := $(CONDA_PREFIX_1)/pkgs/openblas-0.3.3-h9ac9557_1001/include
+BLAS_LIB := $(CONDA_PREFIX_1)/pkgs/openblas-0.3.3-h9ac9557_1001/lib
 
 # Homebrew puts openblas in a directory that is not on the standard search path
 # BLAS_INCLUDE := $(shell brew --prefix openblas)/include
