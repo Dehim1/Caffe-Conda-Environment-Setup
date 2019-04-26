@@ -41,7 +41,7 @@ If you edited caffe_env_vars.txt and you want to update the environment variable
 
 ```bash
 conda activate <name of conda environment>
-bash caffe_env_vars.sh
+bash conda_env_vars.sh
 ```
 
 ### B. Manual setup
