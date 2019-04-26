@@ -27,7 +27,7 @@ OPENCV_VERSION := 3
 # CUSTOM_CXX := g++
 
 # CUDA directory contains bin/ and lib/ directories that we need.
-CUDA_DIR := /usr/local/cuda
+CUDA_DIR := /usr/local/cuda-10.1
 # On Ubuntu 14.04, if cuda tools are installed via
 # "sudo apt-get install nvidia-cuda-toolkit" then use this instead:
 # CUDA_DIR := /usr
@@ -70,19 +70,18 @@ BLAS_LIB := $(CONDA_PREFIX_1)/pkgs/openblas-0.3.3-h9ac9557_1001/lib
 # 		/usr/lib/python2.7/dist-packages/numpy/core/include
 # Anaconda Python distribution is quite popular. Include path:
 # Verify anaconda location, sometimes it's in root.
-# ANACONDA_HOME := $(HOME)/install/anaconda3/envs/Caffe3
 PYTHON_LIBRARIES := boost_python37 python3.7m
 PYTHON_LIB := $(CONDA_PREFIX)/lib
 PYTHON_INCLUDE := $(CONDA_PREFIX)/include \
 		$(CONDA_PREFIX)/include/python3.7m \
-		$(CONDA_PREFIX)/lib/python3.7/site-packages/numpy/core/include \
+        $(CONDA_PREFIX)/lib/python3.7/site-packages/numpy/core/include \
 
 ## Uncomment to use Python 2
 # PYTHON_LIBRARIES := boost_python27 python2.7
 # PYTHON_LIB := $(CONDA_PREFIX)/lib
 # PYTHON_INCLUDE := $(CONDA_PREFIX)/include \
 # 		$(CONDA_PREFIX)/include/python2.7 \
-# $(CONDA_PREFIX)/lib/python2.7/site-packages/numpy/core/include \
+#       $(CONDA_PREFIX)/lib/python2.7/site-packages/numpy/core/include \
 
 # We need to be able to find libpythonX.X.so or .dylib.
 # PYTHON_LIB := /usr/lib
